@@ -7,7 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="bundle.css">
-  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <!-- Add favicons
+    <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.glitch.com/9c389208-b279-4e96-bcbc-e5f8712d8706%2Ffavicon-32x32.png?1553712190412">
+    <link rel="icon" type="image/png" sizes="96x96" href="https://cdn.glitch.com/9c389208-b279-4e96-bcbc-e5f8712d8706%2Ffavicon-96x96.png?1553712190613">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.glitch.com/9c389208-b279-4e96-bcbc-e5f8712d8706%2Ffavicon-16x16.png?1553712190383">
+  -->
 </head>
 
 <body class="mdc-typography language-css media-template">
@@ -24,17 +28,20 @@
         <a href="history-and-results.html" class="mdc-list-item" role="option">
           <span class="mdc-list-item__text">Історія та результати</span>
         </a>
-        <a href="teaching.html" class="mdc-list-item" role="option">
+        <a href="teaching.html" class="mdc-list-item mdc-list-item--selected" role="option" aria-selected="true"
+          tabindex="0">
           <span class="mdc-list-item__text">Навчання</span>
         </a>
-        <a href="certificate.html" class="mdc-list-item" role="option">
+        <a href="certificate.html" class="mdc-list-item mdc-list-item--selected" role="option">
           <span class="mdc-list-item__text">Сертифікат</span>
         </a>
         <div class="nav-footer">
           <hr class="mdc-list-divider">
-          <a class="mdc-list-item mdc-list-item--selected" href="/" role="option" aria-selected="true" tabindex="0">
-            <span class="mdc-list-item__text">Про проєкт</span>
-          </a>
+          <div class="footer-button-wrapper">
+            <a class="mdc-button mdc-button--dense footer-mdc-button" href="/" role="option">
+              <span class="mdc-button__label">Про проєкт</span>
+            </a>
+          </div>
         </div>
       </nav>
 
@@ -54,29 +61,23 @@
     <header class="mdc-top-app-bar media-top-app-bar">
       <div class="mdc-top-app-bar__row">
         <section class="media-menu-section mdc-top-app-bar__section">
-          <a href="#" class="material-icons mdc-top-app-bar__navigation-icon">menu</a>
+          <a href="#" class="demo-menu material-icons mdc-top-app-bar__navigation-icon">menu</a>
+          <span class="mdc-list-item__text mdc-typography--overline">Overline Header</span>
         </section>
       </div>
       <section class="mdc-top-app-bar__section contained-section header-section">
-        <nav class="mdc-list">
-          <a class="mdc-list-item mdc-list-item--selected" href="/" role="option" aria-selected="true" tabindex="0">
-            <img src="https://via.placeholder.com/200x75.png?text=Zero%20Waste%0AAcademy" alt="Zero Waste Academy" class="logo">
-            <p class="mdc-typography--body1 author">Betty Eghan</p>
-          </a>
-          <a href="team.html" class="mdc-list-item" role="option">
-            <span class="mdc-list-item__text">Команда</span>
-          </a>
-          <a href="history-and-results.html" class="mdc-list-item" role="option">
-            <span class="mdc-list-item__text">Історія та результати</span>
-          </a>
-          <a href="teaching.html" class="mdc-list-item" role="option">
-            <span class="mdc-list-item__text">Навчання</span>
-          </a>
-          <a href="certificate.html" class="mdc-list-item" role="option">
-            <span class="mdc-list-item__text">Сертифікат</span>
-          </a>
-
-        </nav>
+        <h1 class="mdc-typography--headline5 page-title">Header</h1>
+        <div class="topic-section">
+          <p class="mdc-typography--caption topic-label">Trending: </p>
+          <ul class="topics">
+            <li class="topic"><a href="#" class="mdc-typography--body2">Lifestyle</a></li>
+            <li class="topic"><a href="#" class="mdc-typography--body2">Food</a></li>
+            <li class="topic"><a href="#" class="mdc-typography--body2">Television</a></li>
+            <li class="topic"><a href="#" class="mdc-typography--body2">Travel</a></li>
+            <li class="topic"><a href="#" class="mdc-typography--body2">Animals</a></li>
+            <li class="topic"><a href="#" class="mdc-typography--body2">Design</a></li>
+          </ul>
+        </div>
       </section>
     </header>
 
@@ -91,10 +92,13 @@
           <p class="mdc-typography--body1 article-preview">Just then she heard something splashing about in the pool a
             little way off, and she swam nearer to make out what it was at first.</p>
           <a class="author-meta" href="#">
-            <img src="https://via.placeholder.com/200x75.png?text=Zero%20Waste%0AAcademy" alt="" class="author-image">
+            <img
+              src="https://cdn.glitch.com/17f6eaf0-3413-4607-9190-d8da5f737643%2Fstock-photo-austin-travis-heights-by-exitflag-146133507.jpg?v=1561412023433"
+              alt="" class="author-image">
             <p class="mdc-typography--body1 author">Betty Eghan</p>
           </a>
-          <img src="https://via.placeholder.com/200x75.png?text=Zero%20Waste%0AAcademy" class="hero" alt="">
+          <img src="https://cdn.glitch.com/17f6eaf0-3413-4607-9190-d8da5f737643%2Fbird.jpg?1559206409087" class="hero"
+            alt="">
           <p class="mdc-typography--body2 hero-caption">In another moment Alice was through the glass, and had jumped
             lightly down into the Looking-glass room. The very first thing she did was to look whether there was a fire
             in the fireplace.</p>
