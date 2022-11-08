@@ -1850,49 +1850,6 @@ body {
       margin-right: 200px; }
   .material-lessons-drawer .mdc-drawer__header {
     padding-top: 16px; }
-  .material-lessons-drawer .mdc-drawer__title {
-    font-family: 'Manrope', sans-serif;
-    font-style: italic;
-    font-weight: 900;
-    letter-spacing: -0.2px; }
-    .material-lessons-drawer .mdc-drawer__title svg {
-      vertical-align: -3px;
-      margin-right: 4px; }
-    .material-lessons-drawer .mdc-drawer__title .mdc-chip {
-      height: 24px;
-      left: 4px;
-      bottom: 4px;
-      font-style: normal;
-      font-family: Manrope;
-      -moz-osx-font-smoothing: grayscale;
-      -webkit-font-smoothing: antialiased;
-      font-size: 0.75rem;
-      line-height: 1.25rem;
-      font-weight: 400;
-      letter-spacing: 0.03333em;
-      text-decoration: inherit;
-      text-transform: inherit;
-      font-weight: 600;
-      letter-spacing: 1.2px;
-      background-color: #ECE0FD;
-      color: #6200EE;
-      pointer-events: none; }
-      .material-lessons-drawer .mdc-drawer__title .mdc-chip::before, .material-lessons-drawer .mdc-drawer__title .mdc-chip::after {
-        background-color: #6200EE; }
-      .material-lessons-drawer .mdc-drawer__title .mdc-chip:hover::before {
-        opacity: 0.04; }
-      .material-lessons-drawer .mdc-drawer__title .mdc-chip:not(.mdc-ripple-upgraded):focus::before, .material-lessons-drawer .mdc-drawer__title .mdc-chip.mdc-ripple-upgraded--background-focused::before {
-        transition-duration: 75ms;
-        opacity: 0.12; }
-      .material-lessons-drawer .mdc-drawer__title .mdc-chip:not(.mdc-ripple-upgraded)::after {
-        transition: opacity 150ms linear; }
-      .material-lessons-drawer .mdc-drawer__title .mdc-chip:not(.mdc-ripple-upgraded):active::after {
-        transition-duration: 75ms;
-        opacity: 0.12; }
-      .material-lessons-drawer .mdc-drawer__title .mdc-chip.mdc-ripple-upgraded {
-        --mdc-ripple-fg-opacity: 0.12; }
-      .material-lessons-drawer .mdc-drawer__title .mdc-chip:hover {
-        color: #6200EE; }
   .material-lessons-drawer .mdc-list-group__subheader {
     font-family: Manrope;
     -moz-osx-font-smoothing: grayscale;
@@ -1990,6 +1947,9 @@ body {
     left: 0;
     margin: 0; } }
 
+.media-template .media-menu-section {
+  position: fixed; }
+
 .media-template .mdc-top-app-bar__section {
   padding: 0; }
   .media-template .mdc-top-app-bar__section .material-icons {
@@ -1999,21 +1959,20 @@ body {
 .media-template .contained-section {
   max-width: 1024px;
   padding: 16px;
-  width: calc(100vw - 32px);
   margin: 0 auto; }
   .media-template .contained-section .mdc-list {
     padding: 0;
     color: #fff; }
-    .media-template .contained-section .mdc-list .mdc-list-divider {
-      display: inline-block;
-      border: none;
-      padding-right: 75px; }
     .media-template .contained-section .mdc-list .mdc-list-item {
       display: inline-block;
       height: auto;
       padding: 0;
       font-weight: 700;
-      margin-right: 3rem; }
+      margin-right: 3rem;
+      position: relative;
+      top: -30px; }
+    .media-template .contained-section .mdc-list .mdc-list-item.logo {
+      top: 5px; }
 
 .media-template .header-section {
   display: none; }
@@ -2021,7 +1980,6 @@ body {
 .media-template .mdc-top-app-bar {
   background-color: #016106;
   color: white;
-  border-bottom: 1px solid #ddd;
   position: absolute; }
   .media-template .mdc-top-app-bar .mdc-top-app-bar__action-item,
   .media-template .mdc-top-app-bar .mdc-top-app-bar__navigation-icon {
@@ -2051,24 +2009,6 @@ body {
 
 .media-template .mdc-top-app-bar--fixed-adjust {
   margin: 0 auto; }
-
-.media-template .nav-title {
-  margin: 16px 0 0 16px; }
-
-.media-template .topic-section {
-  display: flex;
-  align-items: center; }
-
-.media-template .topics {
-  padding: 0 0 0 8px; }
-
-.media-template .topic {
-  display: inline-block; }
-
-.media-template .topic a {
-  color: #016106;
-  font-weight: 500;
-  margin-left: 16px; }
 
 .media-template .mdc-top-app-bar--fixed-adjust {
   padding-top: 64px; }
@@ -2144,8 +2084,7 @@ body {
   .media-template .header-section {
     display: flex;
     justify-content: space-between;
-    padding: 0;
-    margin-top: -16px; }
+    padding: 0; }
   .media-template .mdc-top-app-bar--fixed-adjust {
     padding-top: 128px; } }
 
