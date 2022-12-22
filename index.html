@@ -18,7 +18,7 @@
           <span class="mdc-list-item__text">Zero Waste Academy</span>
         </a>
         <hr class="mdc-list-divider">
-        <a href="#team.html" class="mdc-list-item" role="option">
+        <a href="team.html" class="mdc-list-item" role="option">
           <span class="mdc-list-item__text">Команда</span>
         </a>
         <a href="#history-and-results.html" class="mdc-list-item" role="option">
@@ -49,7 +49,7 @@
           <a class="mdc-list-item logo" role="option" href="./">
             <img src="assets/logo.png" alt="Zero Waste Academy">
           </a>
-          <a class="mdc-list-item" role="option" href="#team.html">
+          <a class="mdc-list-item" role="option" href="team.html">
             <span class="mdc-list-item__text">Команда</span>
           </a>
           <a class="mdc-list-item" role="option" href="#history-and-results.html">
@@ -81,7 +81,7 @@
         </a>
       </div>
     </div>
-    <div class="odd">
+    <div>
       <div class="whatis article">
         <h2 class="mdc-typography--headline2">Що таке Zero Waste Academy</h2>
         <p>це унікальний навчально-практичний курс про сучасне керування відходами (ТПВ) відповідно до принципів zero
@@ -97,7 +97,7 @@
           стратегії, планів дій, розробки нових програм з поводження з ТПВ на місцевому рівні.</p>
       </div>
     </div>
-    <div class="odd">
+    <div>
       <div class="tasks article">
         <h2 class="mdc-typography--headline2">Завдання</h2>
         <ol>
@@ -142,7 +142,7 @@
         <a class="link" href="#">Проєкти наших випускників - найкращий доказ переваг навчання</a>
       </div>
     </div>
-    <div class="odd">
+    <div>
       <div class="history article">
         <h2 class="mdc-typography--headline2">Історія</h2>
         <p class="resume">За 2020-2021 роки ми провели 3 курси та випустили більше 100 випускників та випускниць</p>
@@ -224,7 +224,7 @@
         </ul>
       </div>
     </div>
-    <div class="odd">
+    <div>
       <div class="checks article">
         <h2 class="mdc-typography--headline2">Перевір свої знання у сфері Zero waste</h2>
         <a class="mdc-button mdc-button--outlined" href="#">
@@ -240,19 +240,14 @@
         </a>
       </div>
     </div>
-    <footer class="odd">
-      <!--
-        TODO: generate html from parts
-      https://medium.com/hackernoon/using-html-components-with-webpack-f383797a5ca
-      https://stackoverflow.com/questions/61377908/how-to-generate-html-template-for-static-page-from-header-footer-and-css-js-inj
-    -->
+    <div>
       <div class="footer">
         <ul>
           <li>
             <h4 class="mdc-typography--headline4">Навігація</h4>
           </li>
           <li>
-            <a class="" href="#team.html">
+            <a class="" href="team.html">
               <span class="">Команда</span>
             </a>
           </li>
@@ -308,19 +303,24 @@
           </li>
           <li>
             <a class="imglink" href="https://www.facebook.com/kharkivzerowaste">
-              <img src="assets/facebook.svg" alt="facebook">
+              <svg>
+                <use xlink:href="assets/icons.svg#facebook"></use>
+              </svg>
             </a>
             <a class="imglink" href="https://www.instagram.com/kharkiv_zero_waste/">
-              <img src="assets/instagram.svg" alt="instagram">
+              <svg>
+                <use xlink:href="assets/icons.svg#instagram"></use>
+              </svg>
             </a>
             <a class="imglink" href="#">
-              <img src="assets/youtube.svg" alt="youtube">
+              <svg>
+                <use xlink:href="assets/icons.svg#youtube"></use>
+              </svg>
             </a>
           </li>
         </ul>
       </div>
-    </footer>
-
+    </div>
   </div>
 
   <script src="bundle.js" async></script>
