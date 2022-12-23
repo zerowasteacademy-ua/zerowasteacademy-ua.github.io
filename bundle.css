@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Manrope:wght@400;700);@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700);@import url(https://fonts.googleapis.com/css?family=Manrope|Montserrat);/* Build a Material Theme with Material Lessons */
+@import url(https://fonts.googleapis.com/css2?family=Manrope:wght@400;700);@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700);/* Build a Material Theme with Material Lessons */
 /* Color Activity */
 body {
   background-color: #F6F4F2;
@@ -1700,9 +1700,6 @@ body {
 @media (max-width: 1450px) {
   .zwa-drawer {
     height: 100%; } }
-
-.icon {
-  fill: #fff; }
 
 .media-template ol,
 .media-template ul,
