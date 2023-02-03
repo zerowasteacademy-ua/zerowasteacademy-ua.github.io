@@ -1991,6 +1991,14 @@ body {
   border-color: #F6F4F2; }
   .team .mdc-drawer-app-content div:nth-child(even) li h3 {
     color: #F6F4F2; }
+  .team .mdc-drawer-app-content div:nth-child(even) li .mdc-button--raised {
+    color: #8EBB43;
+    background: #F6F4F2; }
+  .team .mdc-drawer-app-content div:nth-child(even) li .mdc-button--raised:hover {
+    background: #fff; }
+  .team .mdc-drawer-app-content div:nth-child(even) li .mdc-button--raised:active {
+    color: #F6F4F2;
+    background: #709D25; }
 
 .team .article ul li {
   border: 2px solid #8EBB43;
@@ -2010,5 +2018,10 @@ body {
     .team .article ul li div h3 {
       font-size: 25px;
       color: #8EBB43; }
+    .team .article ul li div .mdc-button {
+      width: 360px;
+      padding: 0;
+      margin: 0; }
   .team .article ul li p {
-    text-align: initial !important; }
+    text-align: initial !important;
+    align-self: center; }
